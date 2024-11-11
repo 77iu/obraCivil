@@ -1,0 +1,85 @@
+.bloques{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+.bloques .bloque--uno,
+.bloques .bloque--dos{
+  
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.bloques .bloque--uno a,
+.bloques .bloque--dos a
+{
+    text-decoration: none;
+   color: aqua;
+   font-size: 16px;
+   padding: 5px 10px;
+   margin: 2px;
+   position: relative;
+   font-weight: 300;
+   display:flex ;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 1px;
+}
+.bloques .bloque--dos a{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+.bloques .bloque--uno a:before,
+.bloques .bloque--uno a:after,
+.bloques .bloque--dos a:before,
+.bloques .bloque--dos a:after
+
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease;
+    border-radius: 10px;
+    border: 0px solid #00ffff;
+    filter: blur(0px);
+    transform: scale(1);}
+    .bloques .bloque--uno a:hover:after,
+    .bloques .bloque--dos a:hover:after{
+        border: 4px solid aqua;
+        transform: scale(0.95);
+    }
+    .bloques .bloque--uno a:hover:before,
+    .bloques .bloque--dos a:hover:before{
+        border: 5px solid aqua;
+        filter: blur(6px);
+        transform: scale(0.95);
+    }
+@media only screen and (max-width: 1100px){
+    .bloques .bloque--uno 
+    {
+        display: none;
+    }
+    .bloques .bloque--dos:last-child{
+        margin-right:0px;
+  
+     
+    }
+
+    .bloques{
+        flex-direction:column-reverse;
+    }
+
+ 
+}
+
+
+
+
+
+

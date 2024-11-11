@@ -1,0 +1,59 @@
+
+
+.contenido{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:100px 20px 20px 20px;
+   
+}
+
+
+.contenido .card a{
+    transition: 0.3s ease;
+}
+.contenido .card a:hover{
+    color: gray;
+}
+.contenido .card{
+    width: 33%;
+    object-fit: cover;
+  justify-content: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* margin-top: 50px; */
+  
+    padding: 15px;
+}
+.comunicate a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.redes div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+ 
+}
+/* .redes div a{
+    margin: 5px;
+} */
+@media only screen and (max-width: 750px){
+.contenido{
+    flex-direction: column;
+}
+.contenido .card{
+    width: 100%;
+}
+.redes div{
+    justify-content: space-between;
+   
+}
+
+}
