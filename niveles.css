@@ -8,7 +8,6 @@ form,
 .container{
 width: auto;
  flex-wrap: wrap;
- margin-top: 100px;
 }
 .container p{
     padding: 10px;
