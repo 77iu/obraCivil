@@ -44,7 +44,7 @@ aside h2{
 .cards .visitando
 {
 
-   
+    
     padding: 100px 10px 10px 10px;
 }
 
@@ -85,7 +85,7 @@ aside h2{
     padding: 20px 10px 50px 10px;
     background-color: aqua;
 clip-path: path("M0 340 Q282 340 282 240 282 362 282 362 0 362 0 362 0 300 0 300");
-/* transition: 0.5s ease-in-out; */
+transition: 0.5s ease-in-out;
     p{margin: 20px 0;}
     h1{
         font-size: 25px;
