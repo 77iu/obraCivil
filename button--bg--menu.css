@@ -34,7 +34,7 @@
     @media only screen and (max-width: 1100px){
         .button{
             display: block;
-           left: 10px;
+           left: 20px;
         }
     }
     @media only screen and (max-width: 600px){
@@ -55,21 +55,20 @@
        gap: 10px;
        z-index: 20;
        align-items: start;
-      position: relative;
-    border-radius: 0 500px 500px 0;
+       position: relative;
+       border-radius: 0 500px 500px 0;
     overflow: hidden;
         }
        
 
         
         .bg--menu .bloque--uno a{
-            padding: 15px;
-      width: 95%;
+        padding: 15px;
+        width: 95%;
         text-decoration:none;
-
         background-color: aqua;
         color:black;
-       font-weight: 600;  
+        font-weight: 600;  
         letter-spacing:2px;
         }
       
