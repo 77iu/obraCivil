@@ -1,22 +1,46 @@
-
-
 .contenido{
     width: 100%;
     height: auto;
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:100px 20px 20px 20px;
-   
+    padding: 15px;
+    
 }
-
-
 .contenido .card a{
+
+      gap: 10px;
+    padding-left: 20px;
+    position: relative;
     transition: 0.3s ease;
+  
 }
-.contenido .card a:hover{
-    color: gray;
+.contenido .card div a{
+    margin: 10px;
+}
+.contenido .card div a:after{
+    left: -60px;
+}
+/* .contenido .card a:hover{
+    background-color: aqua;
+} */
+.contenido .card a:after{
+    content: "";
+    position: absolute;
+   aspect-ratio: 3/1;
+height: 100%;
+    background-color: aqua;
+    top: 0;
+    left: -50px;
+    transition: 0.5s ease;
+   
+    clip-path: polygon(73%5%,73%5%,83%50%,73%95%,73%95%,83%50%,73%5%,73%5%,83%50%,73%95%,73%95%,83%50%);
+}
+
+
+.contenido .card a:hover:after
+{
+    clip-path: polygon(73%5%,85%5%,95%50%,85%95%,80%95%,90%50%,80%5%,78%5%,88%50%,78%95%,73%95%,83%50%);
 }
 .contenido .card{
     width: 33%;
@@ -25,9 +49,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* margin-top: 50px; */
-  
-    padding: 15px;
+    margin-top: 50px;
 }
 .comunicate a{
     display: flex;
@@ -38,8 +60,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
- 
+    justify-content: center;
+    
 }
 /* .redes div a{
     margin: 5px;
@@ -51,9 +73,10 @@
 .contenido .card{
     width: 100%;
 }
-.redes div{
+/* .redes div{
     justify-content: space-between;
-   
+} */
+.contenido .card div a{
+    margin: unset;
 }
-
 }
