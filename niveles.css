@@ -1,17 +1,24 @@
+
 form,
 .container{
  display: flex;
  justify-content: center;
  align-items: center;
- 
+
 }
 .container{
+
 width: auto;
  flex-wrap: wrap;
+ /* margin-top: 100px; */
 }
 .container p{
     padding: 10px;
 }
+.container p span{
+   background-color: yellow;
+}
+
 .container .headline{
     
     width: 100%;
@@ -85,10 +92,11 @@ background-color: rgb(234, 234, 234);
 
 .container h3{
  text-align: center;
+ padding-bottom: 10px;
 
 }
 .container h2{
-  margin-top: 100px;
+   margin-top: 100px;
     padding: 20px;
 }
 
@@ -121,7 +129,8 @@ background-color: rgb(234, 234, 234);
 
     max-width: 425px;
     width: 100%;
-    aspect-ratio: 1/1;
+    /* height: auto; */
+    aspect-ratio: 1/0.8;
     clip-path: inset(0 1px 0 1px);
     position: relative;
     padding: 10px 0;
@@ -132,7 +141,7 @@ background-color: rgb(234, 234, 234);
  .container .scene {
     width: 100%;
     /* aspect-ratio: 1/0.6; */
-    height: 60%;
+    height: 50%;
     perspective: 800px;
     overflow: hidden;
     position: relative;
@@ -147,24 +156,24 @@ background-color: rgb(234, 234, 234);
     height: 10%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     gap: 3px;
  }
  .container .buttons button {
     width: 47%;
     height: 100%;
     border: unset;
-   background: linear-gradient(to top,rgb(0, 68, 255),white,rgb(0, 68, 255));
+   background: linear-gradient(to top,rgb(29, 158, 158),white,rgb(29, 158, 158));
     transition: filter 0.2s ease-in-out; /* Añade una transición para el filtro */
  }
  .container .buttons button:active {
     filter: brightness(1.5); /* Aumenta el brillo cuando el botón es presionado */
  }
  .container #left-button {
-    clip-path: polygon(0%50%,15%0%,100%0%,100%100%,15%100%);
+    clip-path: polygon(50%50%,60%0%,100%0%,100%100%,60%100%);
  }
  .container #right-button {
-    clip-path: polygon(0%0%,85%0%,100%50%,85%100%,0%100%);
+    clip-path: polygon(0%0%,40%0%,50%50%,40%100%,0%100%);
  }
  /* Configura el cubo 3D */
  .container .box  {
