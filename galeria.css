@@ -1,0 +1,33 @@
+.galeria{
+    width: 100%;
+ padding-top: 80px;
+}
+.galeria h2{
+    padding: 30px 32px 0 32px;
+    text-align: center;
+}
+.galeria p{
+  color: gray;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.list{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    
+    gap: 5px;
+  }
+.list img{
+   max-width: 400px;
+   width: 100%;
+aspect-ratio: 1/1;
+  object-fit: cover;
+   position: relative;
+}
+
+
+
+
