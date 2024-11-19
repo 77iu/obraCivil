@@ -50,14 +50,4 @@
     .bloques .bloque--uno 
     {
         display: none;
-    }
- 
-
-
- 
-}
-@media only screen and (max-width: 1250px){
-    .bloques{
-        flex-direction:column-reverse;
-    }
-}
+    }}
