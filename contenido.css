@@ -22,26 +22,7 @@ font-weight: 600;
 .contenido .card div a{
     margin: 10px;
 }
-/* .contenido .card div a:after{
-    left: -60px;
-} */
 
-/* .contenido .card a:after{
-    content: "";
-    position: absolute;
-   width: 4px;
-height: 0;
-    background-color: aqua;
-    top: 0;
-    left:10px;
-    transition: 0.5s ease;
-   
-    
-}
-.contenido .card a:hover:after
-{
-  height: 100%;
-} */
 .contenido .card{
     width: 33%;
     object-fit: cover;
