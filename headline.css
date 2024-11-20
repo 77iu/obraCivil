@@ -1,40 +1,78 @@
+
 .headline{
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 20px;
+    height: calc(100vh - 80px);
     position: relative;
-    background: linear-gradient(to bottom, rgba(32, 200, 200, 0.78), rgba(0, 0, 0, 0.5)), 
-    url('images/playa02.jpeg');
-background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-background-position: center; /* Centra la imagen */
-
+    margin-top: 79px;   
 }
 
 
 
-.caratulas{
-    width: 98%;
-    padding: 10px;
-    max-width: 400px;
-    border: 1px solid white;
-    text-align: center;
- 
-    /* background-color: rgba(255, 255, 255, 0.85); */
+.headline-img{
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.headline-img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    animation: headImg 20s linear infinite;
+    
+}
+@keyframes headImg {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    20% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
-.caratulas p{
-    color: white;
+.headline-img img:nth-child(1) {
+    animation-delay: 0s;
 }
-.caratulas .caratula-dos{
-    letter-spacing: 2px;
-    font-size: 20px;
+
+.headline-img img:nth-child(2) {
+    animation-delay: 5s;
 }
-.caratulas .caratula-uno,
-.caratulas .caratula-tres{
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
+
+.headline-img img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.headline-img img:nth-child(4) {
+    animation-delay: 15s;
+}
+@media (max-width: 1500px) {
+    .caratulas .caratula-uno {
+        
+        font-size: 40px; 
+   
+        
+    }
+
+    
+   
+}
+@media (max-width: 700px){
+    .caratulas .caratula-uno
+   {
+        font-size: 25px;
+    }
+    .caratulas .caratula-dos{
+        font-size: 13px;
+        padding: 5px;
+        line-height: unset;
+    }
+    .caratulas .caratula-tres{
+        font-size: 40px;
+    }
 }
