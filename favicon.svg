@@ -3,6 +3,6 @@
  
 
 
-   <text x="0" y="55" fill="aqua" font-size="80" font-family="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" dy=".3em">O</text>
-  <text x="50" y="55" fill="aqua" font-size="80" font-family="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" dy=".3em">C</text>
+   <text x="0" y="50" fill="aqua" font-size="80" font-family="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" dy=".3em">O</text>
+  <text x="50" y="50" fill="aqua" font-size="80" font-family="'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" dy=".3em">C</text>
 </svg>
