@@ -31,10 +31,10 @@
       <div class="bloque--uno">
         <a href="index.html">Inicio</a>
         <a href="index.html#experiencia" >Experiencia Laboral</a>
-        <a href="index.html#actualidad">Actualidad</a>
+        <a href="galeria.html#gArizu" onclick="remove()">Actualidad</a>
         <a href="#">Mi información</a>
         <a href="niveles.html">Herramientas</a>
-        <a href="#gAlameda" onclick="remove()">Galería</a>
+        <a href="#gMitre" onclick="remove()" >Galería </a>
    
       </div>
       <div class="redes--bg">
@@ -50,10 +50,10 @@
       <a href="index.html" class="logo"><span>Obra</span><span>Civil</span></a>
       <div class="bloques">
         <nav class="bloque--uno">
-          <a href="index.html" onclick="remove()">Inicio</a>
+          <a href="index.html">Inicio</a>
           <a href="index.html#experiencia">Experiencia Laboral</a>
-          <a href="index.html#actualidad">Actualidad</a>
-          <a href="#" onclick="remove()">Mi información</a>
+          <a href="galeria.html#gArizu" >Actualidad</a>
+          <a href="#">Mi información</a>
           <a href="niveles.html">Herramientas</a>
           <a href="galeria.html#alameda">Galería</a>
          
@@ -167,8 +167,19 @@
             <p>Capataz de Obra Civil</p>
              <div class="list">
                  <img src="images/cuyoil01.jpeg" alt="">
-                 <img src="images/cuyoil02.jpeg" alt="">
+                
                  <img src="images/cuyoil03.jpeg" alt="">
+            
+                
+             </div>
+         </div>
+
+         <div class="galeria" id="gArizu">
+          <h2>Infraestructura, Urbanización y Arquitectura, Inmuebles Ex Bodega Arizu</p>
+             <div class="list">
+                 <img src="images/auditorio04.jpeg" alt="">
+                 <img src="images/auditorio03.jpeg" alt="">
+                 
             
                 
              </div>
@@ -191,7 +202,7 @@
       </div>
       <div class="comunicate card">
         
-        <a href="index.html#actualidad">Actualidad</a>
+        <a href="galeria.html#gArizu">Actualidad</a>
         <a href="#">Mi información</a>
         <a href="niveles.html">Herramientas</a>
         <a href="niveles.html" class="blue">• Calculador de niveles por distancia</a>
@@ -213,7 +224,7 @@
     <footer><p><span>Obra</span><span>Civil</span> creado por Miguel Cortez</p></footer>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="index.js"></script>
-    <script>
+    <!-- <script>
       document.querySelectorAll('.image-container').forEach(container => {
     const img = container.querySelector('img');
     const altText = img.alt;
@@ -221,6 +232,6 @@
         container.style.setProperty('--description', `"${altText}"`);
     }
 });
-    </script>
+    </script> -->
   </body>
 </html>
