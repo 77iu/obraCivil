@@ -57,3 +57,26 @@ function calcularNuevoNivel() {
     box.style.transform = `translateZ(-400px) rotateY(${rotationAngle}deg)`;
  });
  
+
+ let startX = 0;
+let endX = 0;
+
+// Touch events
+box.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+box.addEventListener('touchmove', (e) => {
+  endX = e.touches[0].clientX;
+});
+
+box.addEventListener('touchend', () => {
+  if (startX > endX + 50) {
+    // Swipe left
+    rotationAngle -= 60;
+  } else if (startX < endX - 50) {
+    // Swipe right
+    rotationAngle += 60;
+  }
+  box.style.transform = `translateZ(-400px) rotateY(${rotationAngle}deg)`;
+});
